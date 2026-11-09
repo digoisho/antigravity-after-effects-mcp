@@ -549,3 +549,4 @@ main().catch((err) => {
   console.error("Fatal error in After Effects MCP server:", err);
   process.exit(1);
 });
+

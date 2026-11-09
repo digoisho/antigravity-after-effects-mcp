@@ -502,3 +502,4 @@ export function buildRenderCompFrameScript(params) {
     };
   `;
 }
+

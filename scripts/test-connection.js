@@ -44,3 +44,4 @@ runDiagnostics().catch((e) => {
   console.error("Diagnostic failed:", e);
   process.exit(1);
 });
+

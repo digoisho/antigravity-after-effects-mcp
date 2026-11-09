@@ -70,3 +70,4 @@ Structure the user's data for maximum audience retention across the requested `d
   - `aeCreateCounter(comp, { startValue, endValue, startTime, endTime, prefix, suffix, decimals, fontSize, color, position })`
   - `aeAnimateProp(prop, [{ time, value }, ...], "snappy")`
   - `aeCenterAnchor(layer, sampleTime, targetPos)`
+

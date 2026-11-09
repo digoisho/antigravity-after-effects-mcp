@@ -232,3 +232,4 @@ $sorted | ConvertTo-Json -Compress
 
   return saveBrandTheme(inferredTheme);
 }
+

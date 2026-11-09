@@ -56,3 +56,4 @@ An **AE-GPT style Model Context Protocol (MCP) Server & AI Motion Graphics Direc
    - In After Effects, open **Window > AE-Antigravity-Bridge.jsx**
 4. **Prompt Antigravity**:
    > *"Create a motion graphics from this data: Q1 $1.2M, Q2 $2.4M, Q3 $3.9M, Q4 $5.8M — a 15 sec animation in 9:16 ratio FHD using the fintech-emerald theme."*
+
