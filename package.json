@@ -1,0 +1,16 @@
+{
+  "name": "antigravity-after-effects-mcp",
+  "version": "1.0.0",
+  "description": "AE-GPT style Model Context Protocol (MCP) Server & Motion Graphics Director for Adobe After Effects and Google Antigravity",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "install-bridge": "node scripts/install-bridge.js",
+    "test-ae": "node scripts/test-connection.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "zod": "^3.24.2"
+  }
+}
