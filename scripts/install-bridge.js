@@ -25,7 +25,7 @@ export function installScriptUIPanel() {
     }
   }
 
-  // 2. Also try Support Files/Scripts/ScriptUI Panels next to AfterFX.exe
+  // 2. Also install to Support Files/Scripts/ScriptUI Panels next to AfterFX.exe
   const exePath = findAfterEffectsExecutable();
   if (exePath) {
     const supportDir = path.dirname(exePath);
@@ -48,4 +48,3 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     console.log("  ->", p);
   }
 }
-
