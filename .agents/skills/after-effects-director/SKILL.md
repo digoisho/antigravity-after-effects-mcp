@@ -57,7 +57,28 @@ Structure the user's data for maximum audience retention across the requested `d
 
 ---
 
-## 3. ExtendScript Rules (When Using `ae_run_extendscript`)
+## 3. Studio-Grade Compositing & Kinetic Typography Rules (Behance / Pinterest Standard)
+
+Never build flat "clip-art" vector shapes or rainbow-colored giant text. Always apply these professional After Effects studio techniques:
+
+1. **Volumetric Light Washes (Zero Bounding-Box Clipping)**:
+   - Never apply heavy `Gaussian Blur` to a small `ShapeLayer` for large background glows (it clips at the shape's raster bounds).
+   - Always create a **full-comp-sized Solid (`W x H`)**, apply **`ADBE Ramp` (Radial Gradient)** from the accent color to **Pure Black (`#000000`)**, and set `layer.blendingMode = BlendingMode.SCREEN` or `BlendingMode.ADD`.
+2. **3D Refractive Glass Morphism**:
+   - Shade glass discs/cards with **`ADBE Ramp`** (deep obsidian core to luminous cobalt/violet edge) + **`BlendingMode.SCREEN`**.
+   - Add a separate rim layer with **`Trim Paths`** (`25%–45%` arc length) + **`ADBE Vector Stroke Taper`** (`Start/End Length: 65%`) + **`BlendingMode.ADD`** so light only catches one curved edge of the glass.
+3. **Flowing Gradient Light Trails**:
+   - Use a single Bezier path with **`ADBE Vector Stroke Taper`** (wide base tapering to a needle tip) + **`ADBE 4ColorGradient`** applied directly to the layer + a blurred **`BlendingMode.ADD`** copy underneath for atmospheric falloff.
+4. **Swiss Editorial Kinetic Typography & Rack-Focus Blur**:
+   - Use a restrained palette (**90% Pure White `#FFFFFF` & Cool Silver `#94A3B8`**, with 1 surgical accent color).
+   - Contrast **wide-tracked micro-captions (`32–38pt`, tracking `+260` to `+400`)** against **tight architectural impact words (`84–120pt`, tracking `+10` to `+60`)**.
+   - Animate **`ADBE Gaussian Blur 2` (`28px -> 0px` on entrance, `0px -> 18px` on exit)** on every fast-cut word beat so text snaps into optical focus.
+5. **Master Cinema Grade & Film Grain**:
+   - Always place a top **Adjustment Layer (`MASTER_Film_Grain_And_Halation`)** with **`ADBE Glo2`** (high threshold `70%+`, radius `45`, intensity `0.45`) and **`ADBE Noise`** (`4.5%` monochromatic grain) to unify gradients and eliminate sterile digital banding.
+
+---
+
+## 4. ExtendScript Rules (When Using `ae_run_extendscript`)
 
 - Always write **ES3-compliant** JavaScript (`var` only, no `const`/`let`, no arrow functions `() =>`, no template literals).
 - Use the pre-injected runtime helpers whenever possible:
